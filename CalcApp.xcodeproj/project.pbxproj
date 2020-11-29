@@ -13,6 +13,8 @@
 		FC5A76C625250F0A00808F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5A76C425250F0A00808F22 /* Main.storyboard */; };
 		FC5A76C825250F0B00808F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5A76C725250F0B00808F22 /* Assets.xcassets */; };
 		FC5A76CB25250F0B00808F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5A76C925250F0B00808F22 /* LaunchScreen.storyboard */; };
+		FC5A76D425250F8700808F22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A76D325250F8700808F22 /* Car.swift */; };
+		FC5A76D62525134900808F22 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A76D52525134900808F22 /* Calc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FC5A76C725250F0B00808F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5A76CA25250F0B00808F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5A76CC25250F0B00808F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5A76D325250F8700808F22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		FC5A76D52525134900808F22 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		FC5A76BD25250F0A00808F22 /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC5A76D225250F5200808F22 /* model */,
 				FC5A76BE25250F0A00808F22 /* AppDelegate.swift */,
 				FC5A76C025250F0A00808F22 /* SceneDelegate.swift */,
 				FC5A76C225250F0A00808F22 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				FC5A76CC25250F0B00808F22 /* Info.plist */,
 			);
 			path = CalcApp;
+			sourceTree = "<group>";
+		};
+		FC5A76D225250F5200808F22 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A76D325250F8700808F22 /* Car.swift */,
+				FC5A76D52525134900808F22 /* Calc.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			files = (
 				FC5A76C325250F0A00808F22 /* ViewController.swift in Sources */,
 				FC5A76BF25250F0A00808F22 /* AppDelegate.swift in Sources */,
+				FC5A76D62525134900808F22 /* Calc.swift in Sources */,
+				FC5A76D425250F8700808F22 /* Car.swift in Sources */,
 				FC5A76C125250F0A00808F22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "t-saito.com.CalcApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "t-saito.com.CalcApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
